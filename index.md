@@ -45,55 +45,55 @@ table {
         <th> Similar Song 3 </th>
     </tr>
     <tr>
-        <th> "club" <br> location </th>
+        <th> club </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/club/rank0.wav" type="audio/mpeg"></audio> </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/club/rank1.wav" type="audio/mpeg"></audio> </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/club/rank2.wav" type="audio/mpeg"></audio> </th>
     </tr>
     <tr>
-        <th> "club","house","electronic" <br> location, genre, genre </th>
+        <th> club,house,electronic</th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/club_house_electornic/rank0.wav" type="audio/mpeg"></audio> </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/club_house_electornic/rank1.wav" type="audio/mpeg"></audio> </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/club_house_electornic/rank2.wav" type="audio/mpeg"></audio> </th>
     </tr>
     <tr>
-        <th> "club","electronic","summer" <br> location, time, genre </th>
+        <th> club,electronic,summer</th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/club_electronic_summer/rank0.wav" type="audio/mpeg"></audio> </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/club_electronic_summer/rank1.wav" type="audio/mpeg"></audio> </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/club_electronic_summer/rank2.wav" type="audio/mpeg"></audio> </th>
     </tr>
     <tr>
-        <th> 'happy','jazz','cafe' <br> mood, genre, location </th>
+        <th> happy,jazz,cafe </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/happy_jazz_cafe/rank0.wav" type="audio/mpeg"></audio> </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/happy_jazz_cafe/rank1.wav" type="audio/mpeg"></audio> </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/happy_jazz_cafe/rank2.wav" type="audio/mpeg"></audio> </th>
     </tr>
     <tr>
-        <th> 'sad','jazz','cafe' <br> mood, genre, location </th>
+        <th> sad,jazz,cafe </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/sad_jazz_cafe/rank0.wav" type="audio/mpeg"></audio> </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/sad_jazz_cafe/rank1.wav" type="audio/mpeg"></audio> </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/sad_jazz_cafe/rank2.wav" type="audio/mpeg"></audio> </th>
     </tr>
     <tr>
-        <th> 'energetic','rap','exercise_workout' <br> mood, genre, activity </th>
+        <th> energetic,rap,exercise_workout</th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/energetic_rap_exercise_workout/rank0.wav" type="audio/mpeg"></audio> </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/energetic_rap_exercise_workout/rank1.wav" type="audio/mpeg"></audio> </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/energetic_rap_exercise_workout/rank2.wav" type="audio/mpeg"></audio> </th>
     </tr>
     <tr>
-        <th> 'energetic','pop_rock','excercise_workout' <br> mood, genre, activity </th>
+        <th> energetic,pop_rock,excercise_workout </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/energetic_pop_rock_exercise_workout/rank0.wav" type="audio/mpeg"></audio> </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/energetic_pop_rock_exercise_workout/rank1.wav" type="audio/mpeg"></audio> </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/energetic_pop_rock_exercise_workout/rank2.wav" type="audio/mpeg"></audio> </th>
     </tr>
     <tr>
-        <th> 'forest','ambient' <br> object, genre </th>
+        <th> forest,ambient</th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/forest_ambient/rank0.wav" type="audio/mpeg"></audio> </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/forest_ambient/rank1.wav" type="audio/mpeg"></audio> </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/forest_ambient/rank2.wav" type="audio/mpeg"></audio> </th>
     </tr>
     <tr>
-        <th> 'forest','soundtrack' <br> object, genre </th>
+        <th> forest,soundtrack</th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/forest_soundtrack/rank0.wav" type="audio/mpeg"></audio> </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/forest_soundtrack/rank1.wav" type="audio/mpeg"></audio> </th>
         <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audios/forest_soundtrack/rank2.wav" type="audio/mpeg"></audio> </th>
