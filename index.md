@@ -7,13 +7,14 @@ In this work, we investigate various word embedding spaces trained with differen
 Music listeners often rely on various listening contexts such as mood, theme, time, location and activity to find songs. This can be handled by defining a dictionary of contextual terms and directly associating them with songs as a class label. However, this music tagging approach (i.e., multi-label classification) is highly limited in embracing all possible contextual expressions that listeners can use as a natural language. For example, a listener may use 'club' to search electronic dance music. Unless the model is trained with the specific word, it is not possible to take it as a query. This issue has been addressed by representing the tag words with embedding vectors and associating them with songs in several different settings, for example, zero-shot learning, query-by-blending and multi-task music representation learning. They used the word embedding trained with either general text (e.g., Wikipedia or Gigaword) or music-specific corpus (e.g., tags, lyrics, artist IDs, track IDs). However, the general text may not reflect musical aspects, whereas music-specific corpus may not incorporate various listening contexts which are not directly related to music and also the size of vocabulary can be limited. 
 </p>
 
-![Model Architecture Ver 5 small artboard 2](./assets/img/figure.png)
+![Model Architecture Ver 5 small artboard 2](./assets/img/figure1.png)
 <p align="center">Figure.1 Train W2V and T-sne Visualization</p>
 
 ### Results
 <p align="justify">
 
 The t-SNE plot in Figure 1 provides a more intuitive  example on the result. We used two music genre terms 'electronic' and 'house' and three listening context terms 'club', 'club_dance', and 'partying'. In Wikipedia, they spread apart having only 'house' and 'club' close together. In the music corpus, the two genre terms and 'club' and 'club_dance' are tightly clustered while having 'partying' away. In the music corpus with Wikipedia, the context term 'partying' also becomes closer to the two genres and other context terms. This indicates that using both general and music-specific data provides more balanced correlation between music and listening context.
+</p>
 |                               Corpus                              |  Size | Unique  Word | Unique  Track | Unique  Artist | AllMusic (Seen) |       | LastFm (Unseen) |       |
 |:-----------------------------------------------------------------:|:-----:|:------------:|:-------------:|:--------------:|:---------------:|-------|-----------------|-------|
 |                                                                   |       |              |               |                |    spearmanr    |  nDCG |    spearmanr    |  nDCG |
@@ -24,7 +25,6 @@ The t-SNE plot in Figure 1 provides a more intuitive  example on the result. We 
 |                AllMusic Tags + Amazon Music Reviews               | 45.3m |    664163    |     521778    |      28330     |      0.187      | 0.398 |      0.358      | 0.670 |
 |                           AllMusic Tags                           |  7.1m |     1401     |     507435    |      25203     |      0.252      | 0.409 |                 |       |
 |                             Wikipedia                             | 1.75B |   11163055   |       0       |        0       |      0.098      | 0.356 |      0.162      | 0.600 |
-</p>
 
 ### Retrieval Result
 
