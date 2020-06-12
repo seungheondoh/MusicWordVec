@@ -1,5 +1,5 @@
 <p align="justify">
-In this work, we investigate various word embedding spaces trained with different combinations of general text data and music-specific text data to connect listening contexts to songs in a more balanced manner. 
+In this work, we train the distributed representation of words us-ing different combinations of general text data andmusic-specific data, and evaluate them in terms ofhow they associate listening contexts with songs.
 </p>
 
 ### Overview
