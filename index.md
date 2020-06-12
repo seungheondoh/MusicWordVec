@@ -15,16 +15,108 @@ Music listeners often rely on various listening contexts such as mood, theme, ti
 
 The t-SNE plot in Figure 1 provides a more intuitive  example on the result. We used two music genre terms 'electronic' and 'house' and three listening context terms 'club', 'club_dance', and 'partying'. In Wikipedia, they spread apart having only 'house' and 'club' close together. In the music corpus, the two genre terms and 'club' and 'club_dance' are tightly clustered while having 'partying' away. In the music corpus with Wikipedia, the context term 'partying' also becomes closer to the two genres and other context terms. This indicates that using both general and music-specific data provides more balanced correlation between music and listening context.
 </p>
-|                               Corpus                              |  Size | Unique  Word | Unique  Track | Unique  Artist | AllMusic (Seen) |       | LastFm (Unseen) |       |
-|:-----------------------------------------------------------------:|:-----:|:------------:|:-------------:|:--------------:|:---------------:|-------|-----------------|-------|
-|                                                                   |       |              |               |                |    spearmanr    |  nDCG |    spearmanr    |  nDCG |
-| [AllMusic Tags   + Amazon Music Reviews] (Augmented) + Wikipedia  | 1.98B |   11622471   |     521778    |      28330     |      0.194      | 0.490 |      0.312      | 0.643 |
-|         AllMusic Tags + Amazon Music Reviews +   Wikipedia        |  1.8B |   11622471   |     521778    |      28330     |      0.187      | 0.418 |      0.226      | 0.599 |
-|                    AllMusic Tags   + Wikipedia                    | 1.76B |   11163229   |     507435    |      25203     |      0.157      | 0.402 |      0.183      | 0.589 |
-|        [AllMusic Tags   + Amazon Music Reviews] (Augmented)       | 0.27B |    664163    |     521778    |      28330     |      0.267      | 0.473 |      0.407      | 0.681 |
-|                AllMusic Tags + Amazon Music Reviews               | 45.3m |    664163    |     521778    |      28330     |      0.187      | 0.398 |      0.358      | 0.670 |
-|                           AllMusic Tags                           |  7.1m |     1401     |     507435    |      25203     |      0.252      | 0.409 |                 |       |
-|                             Wikipedia                             | 1.75B |   11163055   |       0       |        0       |      0.098      | 0.356 |      0.162      | 0.600 |
+:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-c3ow" rowspan="2">Corpus</th>
+    <th class="tg-c3ow" rowspan="2">Size</th>
+    <th class="tg-c3ow" rowspan="2">Unique <br>Word</th>
+    <th class="tg-c3ow" rowspan="2">Unique <br>Track</th>
+    <th class="tg-c3ow" rowspan="2">Unique <br>Artist</th>
+    <th class="tg-c3ow" colspan="2">AllMusic (Seen)</th>
+    <th class="tg-0pky" colspan="2">LastFm (Unseen)</th>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">spearmanr</td>
+    <td class="tg-c3ow">nDCG</td>
+    <td class="tg-c3ow">spearmanr</td>
+    <td class="tg-c3ow">nDCG</td>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow">[AllMusic Tags   + Amazon Music Reviews] (Augmented) + Wikipedia </td>
+    <td class="tg-c3ow">1.98B</td>
+    <td class="tg-c3ow">11622471</td>
+    <td class="tg-c3ow">521778</td>
+    <td class="tg-c3ow">28330</td>
+    <td class="tg-c3ow">0.194</td>
+    <td class="tg-c3ow">0.490</td>
+    <td class="tg-c3ow">0.312</td>
+    <td class="tg-c3ow">0.643</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow"><span style="background-color:rgba(171, 178, 191, 0.08)">AllMusic Tags + Amazon Music Reviews +   Wikipedia</span><br></td>
+    <td class="tg-c3ow">1.8B</td>
+    <td class="tg-c3ow">11622471</td>
+    <td class="tg-c3ow">521778</td>
+    <td class="tg-c3ow">28330</td>
+    <td class="tg-c3ow">0.187</td>
+    <td class="tg-c3ow">0.418</td>
+    <td class="tg-c3ow">0.226</td>
+    <td class="tg-c3ow">0.599</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">AllMusic Tags   + Wikipedia<br></td>
+    <td class="tg-c3ow">1.76B</td>
+    <td class="tg-c3ow">11163229</td>
+    <td class="tg-c3ow">507435</td>
+    <td class="tg-c3ow">25203</td>
+    <td class="tg-c3ow">0.157</td>
+    <td class="tg-c3ow">0.402</td>
+    <td class="tg-c3ow">0.183</td>
+    <td class="tg-c3ow">0.589</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">[AllMusic Tags   + Amazon Music Reviews] (Augmented)<br></td>
+    <td class="tg-c3ow">0.27B</td>
+    <td class="tg-c3ow">664163</td>
+    <td class="tg-c3ow">521778</td>
+    <td class="tg-c3ow">28330</td>
+    <td class="tg-c3ow">0.267</td>
+    <td class="tg-c3ow">0.473</td>
+    <td class="tg-c3ow">0.407</td>
+    <td class="tg-c3ow">0.681</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow"><span style="background-color:rgba(171, 178, 191, 0.08)">AllMusic Tags + Amazon Music Reviews</span><br></td>
+    <td class="tg-c3ow">45.3m</td>
+    <td class="tg-c3ow">664163</td>
+    <td class="tg-c3ow">521778</td>
+    <td class="tg-c3ow">28330</td>
+    <td class="tg-c3ow">0.187</td>
+    <td class="tg-c3ow">0.398</td>
+    <td class="tg-c3ow">0.358</td>
+    <td class="tg-c3ow">0.670</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow"><span style="background-color:rgba(171, 178, 191, 0.08)">AllMusic Tags</span><br></td>
+    <td class="tg-c3ow">7.1m</td>
+    <td class="tg-c3ow">1401</td>
+    <td class="tg-c3ow">507435</td>
+    <td class="tg-c3ow">25203</td>
+    <td class="tg-c3ow">0.252</td>
+    <td class="tg-c3ow">0.409</td>
+    <td class="tg-c3ow"></td>
+    <td class="tg-c3ow"></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Wikipedia</td>
+    <td class="tg-c3ow">1.75B</td>
+    <td class="tg-c3ow">11163055</td>
+    <td class="tg-c3ow">0</td>
+    <td class="tg-c3ow">0</td>
+    <td class="tg-c3ow">0.098</td>
+    <td class="tg-c3ow">0.356</td>
+    <td class="tg-c3ow">0.162</td>
+    <td class="tg-c3ow">0.600</td>
+  </tr>
+</tbody>
+</table>
 
 ### Retrieval Result
 
